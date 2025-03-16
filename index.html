@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios en Firestore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Usuarios en tiempo real</h2>
+    <form id="userForm">
+    <input type="text" id="name" placeholder="Nombre" required>
+    <input type="text" id="lastname" placeholder="Apellidos" required>
+    <input type="email" id="email" placeholder="Correo" required>
+    <input type="number" id="age" placeholder="Edad">
+    <input type="text" id="city" placeholder="Ciudad">
+    <input type="text" id="career" placeholder="Carrera" required>
+    <button type="submit">Agregar Usuario</button>
+</form>
+
+    <ul id="userList"></ul>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

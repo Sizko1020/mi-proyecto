@@ -1,0 +1,106 @@
+/* Estilo general */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Efecto de neón */
+@keyframes neonGlow {
+    0% { box-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2; }
+    50% { box-shadow: 0 0 10px #9400d3, 0 0 20px #9400d3; }
+    100% { box-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2; }
+}
+
+/* Fondo con filtro oscuro */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+    z-index: -1;
+}
+
+/* Título con efecto de neón */
+h2 {
+    color: #e0aaff;
+    text-shadow: 0 0 5px #9400d3, 0 0 10px #8a2be2, 0 0 20px #8a2be2;
+    font-size: 2rem;
+}
+
+/* Formulario cibernético */
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 20px auto;
+    border: 2px solid #8a2be2;
+    box-shadow: 0 0 10px #9400d3;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Campos de entrada con efecto neón */
+input {
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #9400d3;
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    color: #e0aaff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Botón con efecto cibernético */
+button {
+    background: linear-gradient(90deg, #8a2be2, #9400d3);
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #9400d3, #8a2be2);
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* Lista de usuarios */
+#userList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#userList li {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 320px;
+    border: 1px solid #8a2be2;
+    box-shadow: 0 0 5px #9400d3;
+    text-align: left;
+    color: #e0aaff;
+}
